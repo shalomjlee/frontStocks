@@ -1,0 +1,22 @@
+$color: #345990;
+
+.card{
+    width: 50vw;;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px black;
+    padding: 2px;
+    a{
+        color: green;
+        &:hover {
+            color:red;
+        }
+    }
+}
+
+body{
+    background-color: $color;
+    height: 100vh;
+    padding: 10px;
+
+}

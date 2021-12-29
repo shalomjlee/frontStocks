@@ -1,0 +1,13 @@
+<p>edit the stock!</p>
+
+<div>
+    NAME: <input [(ngModel)] = "stock.name"/>
+</div>
+<div>
+    SYMBOL: <input [(ngModel)] = "stock.symbol"/>
+</div>
+<div>
+    PRICE: <input [(ngModel)] = "stock.currentPrice"/>
+</div>
+
+<button (click) = "update()">update</button>

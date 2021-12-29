@@ -1,0 +1,8 @@
+
+<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+
+    NAME: <input [(ngModel)] = "stock.name" id="name" name="name" placeholder="name"/>
+    SYMBOL: <input [(ngModel)] = "stock.symbol" id="symbol" name="name" placeholder="name"/>
+    CURRENTPRICE: <input [(ngModel)] = "stock.currentPrice" id="currentPrice" name="name" placeholder="name"/>
+    <button type='button' (click)="onSubmit(myForm)" routerLink='/stocks'>Create Stock</button>
+</form>

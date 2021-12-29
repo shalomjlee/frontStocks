@@ -1,0 +1,18 @@
+<div class="container">
+
+    <div class="card">
+    
+        <h1>Stock</h1>
+        
+        
+        Today's message:
+        {{message}}
+        
+        <h1>{{this.stock.name}}</h1>
+        <h3>${{this.stock.currentPrice}}</h3>
+        <h3>{{this.stock.id}}</h3>
+
+        <a href="https://www.vanguard.com">Vanguard Website</a>
+        <button (click) ="edit()">edit</button>
+    </div>
+</div>

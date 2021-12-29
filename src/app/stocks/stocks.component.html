@@ -1,0 +1,11 @@
+<h1>Stocks that have been retrieved</h1>
+<button (click)="create()" >Create a new stock listing</button>
+
+<div *ngFor ="let stock of stocks">
+    <!-- <app-stock [stock]="stock" [message] ="mensaje"></app-stock> -->
+    <a [routerLink]="['/stocks', stock.id]">{{stock.name}}</a>
+
+
+    <button (click)="deleteStock(stock.id)" >X</button>
+    
+</div> 
